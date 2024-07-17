@@ -1,0 +1,198 @@
+/* ------SECTION 1------- */
+.sect1 {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 100px;
+}
+
+.sect1 .img { 
+    grid-area: 1 / 1 / 4 / 2;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+ .sect1 .img img {
+    width: 100%;
+    margin: 10%;
+    border-radius: 15px;
+    border: solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: ease 0.5s;
+ }
+.sect1 .text { 
+    grid-area: 1 / 2 / 4 / 3;
+    padding: 100px 30px;
+    align-items: center;
+    justify-content: center;
+ } 
+.hightText {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.middleText {
+    font-size: 20px;
+    font-weight: light;
+}
+.btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+}
+.btn a {
+    text-decoration: none;
+} 
+button {
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 30px;
+    border: solid #000 2px;
+    border-radius: 15px;
+    transition: 342ms ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border: #000 2px solid;
+}
+
+/* ------SECTION 2------- */
+.sect2 {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 100px;
+
+}
+.sect2 .img {
+    grid-area: 1 / 2 / 4 / 3;
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.sect2 .img img {
+    width: 100%;
+    margin: 10%;
+    border-radius: 15px;
+    border: solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: ease 0.5s;
+}
+.sect2 .text {
+    grid-area: 1 / 1 / 4 / 2;
+    padding: 100px 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------SECTION 3------- */
+.sect3 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 8px;
+    padding: 20px 100px;
+}
+.sect3 .text {
+    grid-area: 1 / 1 / 2 / 4;
+    width: 100%;
+    text-align: center;
+}
+.sect3 .text p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.card1 {
+    grid-area: 2 / 1 / 4 / 2;
+    border-radius: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+    height: 95%;
+}
+.card2 {
+    grid-area: 2 / 2 / 4 / 3;
+    border-radius: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s ease-in-out;
+    height: 95%;
+}
+.card3 {
+    grid-area: 2 / 3 / 4 / 4; 
+    border-radius: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s ease-in-out;
+    height: 95%;
+}
+/* .card1:hover , .card2:hover , .card3:hover{
+    transform: scale(1.1);
+} */
+
+.sect3 .card1:hover img, 
+.sect3 .card2:hover img, 
+.sect3 .card3:hover img{
+    transform: scale(1.1);
+}
+
+.card1 img, 
+.card2 img,
+.card3 img {
+    width: 80%;
+    margin: 10%;
+    transition: ease 0.5s;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.card1 p,
+.card2 p, 
+.card3 p {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+img:hover {
+    filter: brightness(0.8);
+}
+
+/* -----SECTION 4------  */
+.sect4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+.sect4 .Card1 {
+    grid-area: 1 / 1 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px; 
+}
+.sect4 .Card1 .text {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.sect4 .Card1 .img {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sect4 .Card2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+.sect4 .Card3 {
+    grid-area: 1 / 4 / 2 / 5;
+}
